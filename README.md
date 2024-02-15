@@ -9,7 +9,6 @@ MVC Framework is a simple PHP-based Model-View-Controller (MVC) framework for bu
 - User authentication and session management.
 - View rendering and redirection utilities.
 - Easy routing system for defining routes and handling requests.
-- File upload handling for managing user uploads.
 
 ## Directory Structure
 
