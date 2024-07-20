@@ -1,40 +1,90 @@
-# MVC Framework
+```markdown
+# PHP MVC Framework
 
-MVC Framework is a simple PHP-based Model-View-Controller (MVC) framework for building web applications. It provides a structured approach to organizing code, separating concerns, and enhancing maintainability.
+A lightweight MVC framework built with PHP to facilitate web application development.
+
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Features
+- Simple and lightweight
+- Easy to understand and extend
+- Follows MVC architecture
+- Supports basic routing
+- Template engine integration
+- PDO wrapper for database interactions
 
-- MVC architecture for organizing code into models, views, and controllers.
-- Database integration using PDO Wrapper for MySQL database.
-- User authentication and session management.
-- View rendering and redirection utilities.
-- Easy routing system for defining routes and handling requests.
+## Installation
 
-## Directory Structure
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/OmarElprolosy66/PHP_MVC.git
+    ```
+2. **Navigate to the project directory:**
+    ```sh
+    cd PHP_MVC
+    ```
+3. **Install dependencies using Composer:**
+    ```sh
+    composer install
+    ```
+4. **Install the PDO wrapper using Composer:**
+    ```sh
+    composer require dcblogdev/pdo-wrapper
+    ```
+5. **Set up your environment:**
+    - Rename `.env.example` to `.env` and configure your environment variables.
 
-The directory structure of the MVC Framework is as follows:
-
-- **app**: Contains the core application files.
-  - **config**: Configuration files, including database configurations.
-  - **controllers**: Controllers for handling requests and business logic.
-  - **core**: Core framework classes and utilities.
-  - **models**: Model classes for interacting with the database.
-  - **views**: View files for rendering HTML content.
-- **public**: Publicly accessible files, including front-end assets and entry point (`index.php`).
+6. **Set up your web server:**
+    - Configure your web server's document root to the `public` directory of the project.
 
 ## Usage
 
-1. Define routes in the `public/index.php` file to map URLs to controller methods.
-2. Create controller classes in the `app/controllers` directory to handle different parts of your application.
-3. Define model classes in the `app/models` directory to interact with the database.
-4. Create view files in the `app/views` directory to render HTML content.
-5. Use session management and user authentication utilities provided by the `Session` class.
-6. Customize the application by extending core classes and adding additional functionality as needed.
+1. **Run the application:**
+    - If using a built-in PHP server:
+    ```sh
+    php -S localhost:8000 -t public
+    ```
+2. **Access the application:**
+    - Open your browser and navigate to `http://localhost:8000`.
+
+## Project Structure
+
+```plaintext
+├── app
+│   ├── Controllers
+│   ├── Models
+│   ├── Views
+│   ├── Core
+│   └── init.php
+├── public
+│   ├── index.php
+│   ├── .htaccess
+│   └── assets
+├── vendor
+├── .env.example
+├── composer.json
+├── README.md
+```
+
+- `app/Controllers` - Contains controller classes.
+- `app/Models` - Contains model classes.
+- `app/Views` - Contains view files.
+- `app/Core` - Contains core classes for the framework.
+- `public/` - Publicly accessible files, including `index.php` and `.htaccess`.
+- `vendor/` - Composer dependencies.
+- `.env.example` - Example environment configuration.
 
 ## Contributing
 
-Contributions to the MVC Framework are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on GitHub.
+Contributions are welcome! Please submit a pull request or open an issue to discuss your ideas.
 
 ## License
 
-The MVC Framework is open-source software licensed under the [MIT license](LICENSE).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
