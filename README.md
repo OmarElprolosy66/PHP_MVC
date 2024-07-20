@@ -56,11 +56,11 @@ A lightweight MVC framework built with PHP to facilitate web application develop
 
 ```plaintext
 ├── app
-│   ├── Controllers
-│   ├── Models
-│   ├── Views
-│   ├── Core
-│   └── init.php
+│   ├── controllers
+│   ├── models
+│   ├── views
+│   ├── core
+│   └── config
 ├── public
 │   ├── index.php
 │   ├── .htaccess
@@ -71,10 +71,10 @@ A lightweight MVC framework built with PHP to facilitate web application develop
 ├── README.md
 ```
 
-- `app/Controllers` - Contains controller classes.
-- `app/Models` - Contains model classes.
-- `app/Views` - Contains view files.
-- `app/Core` - Contains core classes for the framework.
+- `app/controllers` - Contains controller classes.
+- `app/models` - Contains model classes.
+- `app/views` - Contains view files.
+- `app/core` - Contains core classes for the framework.
 - `public/` - Publicly accessible files, including `index.php` and `.htaccess`.
 - `vendor/` - Composer dependencies.
 - `.env.example` - Example environment configuration.
